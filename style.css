@@ -20,6 +20,15 @@ font-family: 'Poppins', sans-serif;
 grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card-header.grid {
+    grid-gap: 0;
+}
+
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
 .grid-3-card {
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -53,7 +62,7 @@ grid-template-columns: 1fr 2fr 2fr;
 
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -210,5 +219,11 @@ footer a {
     .grid {
         grid-template-columns: 1fr;
         column-gap: 32px;
+    }
+    .card-header img{
+        display: none;
+    }
+    embed {
+        aspect-ratio: 16/9;
     }
 }
